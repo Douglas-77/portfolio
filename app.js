@@ -1,33 +1,41 @@
+// To add a screenshot: drop the image in images/maps/ and set the path below.
+// Example: image: "images/maps/my-map.jpg"
 const MAPS = [
   {
     title: "Aegis Foundry",
     type: "Control",
     status: "Released",
+    image: "",
   },
   {
     title: "Riptide Complex",
     type: "Payload",
     status: "Live Ops",
+    image: "",
   },
   {
     title: "Vanguard Rift",
     type: "Arena",
     status: "Playtest",
+    image: "",
   },
   {
     title: "Polar Relay",
     type: "CTF",
     status: "Released",
+    image: "",
   },
   {
     title: "Kestrel Docks",
     type: "Siege",
     status: "Concept",
+    image: "",
   },
   {
     title: "Hexline Facility",
     type: "Escort",
     status: "Production",
+    image: "",
   },
 ];
 
@@ -78,15 +86,17 @@ const renderMaps = () => {
   MAPS.forEach((map) => {
     const card = document.createElement("article");
     card.className = "map-card";
+    const thumbInner = map.image
+      ? `<img src="${map.image}" alt="${map.title}" loading="lazy" />`
+      : `<span class="map-thumb-label">${map.title.split(" ")[0]}</span>`;
     card.innerHTML = `
-      <div class="map-thumb">${map.title.split(" ")[0]}</div>
-      <div>
+      <div class="map-thumb">${thumbInner}</div>
+      <div class="map-info">
         <h3>${map.title}</h3>
-        <p>${map.type} · ${map.status}</p>
-      </div>
-      <div class="map-meta">
-        <span>${map.type}</span>
-        <span>${map.status}</span>
+        <div class="map-meta">
+          <span>${map.type}</span>
+          <span>${map.status}</span>
+        </div>
       </div>
     `;
     mapGrid.appendChild(card);
