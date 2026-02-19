@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hammer Source Mapping Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="particles" id="particles"></div>
+    <div class="vignette"></div>
+
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#top">BlueHammer</a>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#maps">Maps</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#tools">Tools</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Hammer Source Mapping</p>
+        <h1>Dark Blue. Deep Detail. Tactical Flow.</h1>
+        <p class="hero-subtitle">
+          I design immersive Source Engine spaces with a focus on clarity, scale,
+          and atmosphere. From competitive routes to cinematic set pieces, every
+          layout is tuned for gameplay and story.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#maps">View Portfolio</a>
+          <a class="btn ghost" href="#contact">Start a Project</a>
+        </div>
+      </div>
+      <div class="hero-fade"></div>
+    </header>
+
+    <main>
+      <section id="about" class="section about">
+        <div class="section-inner">
+          <h2>About</h2>
+          <p>
+            I specialize in Hammer Source blockouts, lighting passes, and
+            optimization for multiplayer maps. Each project includes clear
+            callouts, smart nav flow, and polished blue-themed visual identity.
+          </p>
+          <div class="stats">
+            <div>
+              <span class="stat-value">6+</span>
+              <span class="stat-label">Years Mapping</span>
+            </div>
+            <div>
+              <span class="stat-value">30+</span>
+              <span class="stat-label">Published Maps</span>
+            </div>
+            <div>
+              <span class="stat-value">12</span>
+              <span class="stat-label">Current Clients</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="maps" class="section maps">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2>Featured Maps</h2>
+            <p>Signature projects blending mood, navigation, and performance.</p>
+          </div>
+          <div class="map-grid" id="map-grid"></div>
+        </div>
+      </section>
+
+      <section class="section marquee">
+        <div class="marquee-track" id="marquee"></div>
+      </section>
+
+      <section id="workflow" class="section workflow">
+        <div class="section-inner">
+          <h2>Workflow</h2>
+          <div class="timeline">
+            <div class="timeline-step">
+              <span>01</span>
+              <h3>Discovery & Goals</h3>
+              <p>Define player flow, scale, and the core gameplay beats.</p>
+            </div>
+            <div class="timeline-step">
+              <span>02</span>
+              <h3>Blockout & Playtest</h3>
+              <p>Iterate quickly with test groups and adjust pacing.</p>
+            </div>
+            <div class="timeline-step">
+              <span>03</span>
+              <h3>Art Pass</h3>
+              <p>Finalize lighting, decals, and environmental storytelling.</p>
+            </div>
+            <div class="timeline-step">
+              <span>04</span>
+              <h3>Optimization</h3>
+              <p>Visleafing, hints, and lighting passes for performance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="section tools">
+        <div class="section-inner">
+          <h2>Tools & Skills</h2>
+          <div class="tool-grid">
+            <div class="tool-card">
+              <h3>Hammer Editor</h3>
+              <p>Advanced blockout, entity setup, and light precision.</p>
+            </div>
+            <div class="tool-card">
+              <h3>Source SDK</h3>
+              <p>Optimization workflows, compile pipelines, and QC.</p>
+            </div>
+            <div class="tool-card">
+              <h3>Photoshop</h3>
+              <p>Decals, signage, and texture iteration with clean flow.</p>
+            </div>
+            <div class="tool-card">
+              <h3>Substance Painter</h3>
+              <p>Custom materials for hero props and set pieces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-inner">
+          <h2>Contact</h2>
+          <div class="contact-card">
+            <p>
+              Ready for a new map or a fresh art pass? Let’s build a space that
+              plays as good as it looks.
+            </p>
+            <div class="contact-actions">
+              <a class="btn primary" href="mailto:hello@bluehammer.dev">Email Me</a>
+              <a class="btn ghost" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn ghost" href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> BlueHammer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
