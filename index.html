@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hammer Source Mapping Portfolio</title>
+    <title>Douglas Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +19,11 @@
 
     <nav class="nav" id="nav">
       <div class="nav-inner">
-        <a class="nav-logo" href="#top">Douglas</a>
+        <a class="nav-logo" href="#top">Douglas Portfolio</a>
         <div class="nav-links" id="nav-links">
           <a href="#about">About</a>
           <a href="#maps">Maps</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#tools">Tools</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -37,12 +36,11 @@
         <p class="eyebrow">Source Engine Level Designer</p>
         <h1>I build maps.</h1>
         <p class="hero-subtitle">
-          Clean layouts, good sightlines, spaces that feel real.
-          I've been making Source Engine levels for years — here's what I've been working on.
+          Focusing on optimization and surreal aesthetics.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="#maps">See my work</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="#contact">Reach out</a>
         </div>
       </div>
       <div class="hero-fade"></div>
@@ -59,16 +57,8 @@
           </p>
           <div class="stats">
             <div>
-              <span class="stat-value">4+</span>
+              <span class="stat-value">2+</span>
               <span class="stat-label">Years Mapping</span>
-            </div>
-            <div>
-              <span class="stat-value">15+</span>
-              <span class="stat-label">Maps Made</span>
-            </div>
-            <div>
-              <span class="stat-value">6</span>
-              <span class="stat-label">Released</span>
             </div>
           </div>
         </div>
@@ -88,53 +78,34 @@
         <div class="marquee-track" id="marquee"></div>
       </section>
 
-      <section id="workflow" class="section workflow">
+      <section id="skills" class="section skills">
         <div class="section-inner">
-          <h2>How I Work</h2>
-          <div class="timeline">
-            <div class="timeline-step">
-              <span>01</span>
-              <h3>Layout</h3>
-              <p>Rough blockout first — figure out the flow and scale before anything else.</p>
-            </div>
-            <div class="timeline-step">
-              <span>02</span>
-              <h3>Playtest</h3>
-              <p>Play it, break it, fix it. Repeat until it feels right.</p>
-            </div>
-            <div class="timeline-step">
-              <span>03</span>
-              <h3>Detail</h3>
-              <p>Lighting, textures, props. Make it look like a real place.</p>
-            </div>
-            <div class="timeline-step">
-              <span>04</span>
-              <h3>Compile & Ship</h3>
-              <p>Optimize the vis, pack the assets, done.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="tools" class="section tools">
-        <div class="section-inner">
-          <h2>Tools</h2>
-          <div class="tool-grid">
-            <div class="tool-card">
+          <h2>Skills</h2>
+          <div class="skill-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🔨</div>
               <h3>Hammer Editor</h3>
-              <p>Main tool. Brushwork, entities, lighting, all of it.</p>
+              <p>Brushwork, entities, custom lighting, optimization passes.</p>
             </div>
-            <div class="tool-card">
+            <div class="skill-card">
+              <div class="skill-icon">⚙️</div>
               <h3>Source SDK</h3>
-              <p>Compile tools — vvis, vrad, pakrat for packing assets.</p>
+              <p>vvis, vrad, pakrat. Including a heavily customized map protection tool.</p>
             </div>
-            <div class="tool-card">
-              <h3>Photoshop</h3>
-              <p>Custom decals and overlays when I need them.</p>
+            <div class="skill-card">
+              <div class="skill-icon">🐍</div>
+              <h3>Python</h3>
+              <p>Scripting and miscellaneous tools.</p>
             </div>
-            <div class="tool-card">
-              <h3>Substance Painter</h3>
-              <p>For custom materials on props I've built.</p>
+            <div class="skill-card">
+              <div class="skill-icon">🌙</div>
+              <h3>Lua / GLua</h3>
+              <p>Addons, gamemodes, and clientside derma.</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🌐</div>
+              <h3>Web</h3>
+              <p>HTML, CSS, TypeScript. Built and hosted projects like this one.</p>
             </div>
           </div>
         </div>
@@ -144,12 +115,9 @@
         <div class="section-inner">
           <h2>Work Together</h2>
           <div class="contact-card">
-            <p>
-              Open to commissions and collaborations. If you have a project in mind, just reach out.
-            </p>
             <div class="contact-actions">
+              <a class="btn primary" href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a>
               <a class="btn ghost" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a class="btn ghost" href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a>
             </div>
           </div>
         </div>
@@ -158,9 +126,15 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <p>© <span id="year"></span> BlueHammer</p>
+        <p>© <span id="year"></span> Douglas Portfolio v1.0</p>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
 
     <script src="app.js"></script>
   </body>

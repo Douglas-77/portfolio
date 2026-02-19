@@ -99,9 +99,40 @@ const renderMaps = () => {
         </div>
       </div>
     `;
+    // Open lightbox on click if there's an image
+    if (map.image) {
+      card.addEventListener("click", () => openLightbox(map.image, map.title));
+    }
     mapGrid.appendChild(card);
   });
 };
+
+// Lightbox
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxCaption = document.getElementById("lightbox-caption");
+const lightboxClose = document.getElementById("lightbox-close");
+
+const openLightbox = (src, caption) => {
+  lightboxImg.src = src;
+  lightboxImg.alt = caption;
+  lightboxCaption.textContent = caption;
+  lightbox.classList.add("active");
+  document.body.style.overflow = "hidden";
+};
+
+const closeLightbox = () => {
+  lightbox.classList.remove("active");
+  document.body.style.overflow = "";
+};
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeLightbox();
+});
 
 const renderMarquee = () => {
   const items = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
