@@ -239,8 +239,7 @@ document.addEventListener("keydown", (e) => {
   if (!lightbox.classList.contains("active")) return;
   if (e.key === "Escape") closeLightbox();
   if (e.key === "ArrowRight") nextImage();
-  if (e.key === "ArrowLeft") prevImage) => {
-  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowLeft") prevImage();
 });
 
 const renderMarquee = () => {
