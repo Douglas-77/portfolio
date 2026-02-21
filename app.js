@@ -24,10 +24,10 @@ const MAPS = [
     images: ["https://i.imgur.com/ZJX3u8b.png", "https://i.imgur.com/a65TCi0.png", "https://i.imgur.com/3PEd4Z2.jpeg"],
   },
   {
-    title: "LCZ",
+    title: "SCP-079",
     type: "SCP-RP",
-    status: "Many hours",
-    images: ["https://i.imgur.com/eA3VdyN.jpeg", "https://i.imgur.com/eHRy23U.jpeg", "https://i.imgur.com/tiEiS05.jpeg"],
+    status: "2 hours",
+    images: ["https://i.imgur.com/elDDLdQ.jpeg", "https://i.imgur.com/4xOdSTS.jpeg"],
   },
   {
     title: "Server Room",
@@ -36,10 +36,10 @@ const MAPS = [
     images: ["https://i.imgur.com/mx7V1pp.jpeg", "https://i.imgur.com/Q8WJ5Rg.png", "https://i.imgur.com/QeN0H2F.jpeg"],
   },
   {
-    title: "SCP-079",
+    title: "LCZ",
     type: "SCP-RP",
-    status: "2 hours",
-    images: ["https://i.imgur.com/elDDLdQ.jpeg", "https://i.imgur.com/4xOdSTS.jpeg"],
+    status: "Many hours",
+    images: ["https://i.imgur.com/eA3VdyN.jpeg", "https://i.imgur.com/eHRy23U.jpeg", "https://i.imgur.com/tiEiS05.jpeg"],
   },
   {
     title: "SCP-457",

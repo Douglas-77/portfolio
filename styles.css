@@ -271,7 +271,7 @@ a {
 }
 
 .maps .section-inner {
-  max-width: 100%;
+  max-width: 1800px;
   padding: 0 48px;
 }
 
@@ -307,7 +307,8 @@ a {
 }
 
 .map-thumb {
-  height: 220px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border-radius: 0;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(77, 159, 255, 0.18), rgba(14, 26, 56, 0.85));
