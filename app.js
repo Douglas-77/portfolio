@@ -271,7 +271,8 @@ document.addEventListener("keydown", (e) => {
 });
 
 const renderMarquee = () => {
-  const items = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
+  // Duplicate items 6 times for seamless infinite scroll
+  const items = Array(6).fill(MARQUEE_ITEMS).flat();
   items.forEach((item) => {
     const span = document.createElement("span");
     span.className = "marquee-item";

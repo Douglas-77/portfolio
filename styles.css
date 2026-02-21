@@ -280,9 +280,10 @@ a {
 .map-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1200px;
+  gap: 32px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 .map-card {
@@ -303,7 +304,7 @@ a {
 }
 
 .map-thumb {
-  height: 260px;
+  height: 360px;
   border-radius: 0;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(77, 159, 255, 0.18), rgba(14, 26, 56, 0.85));
@@ -339,12 +340,12 @@ a {
 .map-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 18px 20px;
+  gap: 8px;
+  padding: 22px 24px;
 }
 
 .map-card h3 {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--text);
 }
