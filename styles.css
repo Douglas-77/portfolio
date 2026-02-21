@@ -304,7 +304,7 @@ a {
 }
 
 .map-thumb {
-  height: 360px;
+  height: 220px;
   border-radius: 0;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(77, 159, 255, 0.18), rgba(14, 26, 56, 0.85));
