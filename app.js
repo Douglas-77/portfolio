@@ -6,12 +6,6 @@ const MAPS = [
     images: []
   },
   {
-    title: "Terminal 6 Optimization",
-    type: "HL-RP",
-    status: "In Progress",
-    images: []
-  },
-  {
     title: "HCZ Entrance",
     type: "SCP-RP",
     status: "8 hours",
