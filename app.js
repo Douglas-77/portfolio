@@ -1,55 +1,132 @@
-// To add a screenshot: drop the image in images/maps/ and set the path below.
-// Example: image: "images/maps/my-map.jpg"
 const MAPS = [
+  {
+    title: "Entrance Zone",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: [""],
+  },
+  {
+    title: "Terminal 6 Optimization",
+    type: "HL-RP",
+    status: "In Progress",
+    images: [""],
+  },
   {
     title: "HCZ Entrance",
     type: "SCP-RP",
-    status: "AREA-7",
-    image: "https://i.imgur.com/BFLKtec.jpeg",
-  },
-  {
-    title: "LCZ Loading Dock",
-    type: "SCP-RP",
-    status: "AREA-7",
-    image: "https://i.imgur.com/BeMNf9F.jpeg",
-  },
-  {
-    title: "Medbay",
-    type: "SCP-RP",
-    status: "AREA-7",
-    image: "https://i.imgur.com/OoUsKyf.png",
-  },
-  {
-    title: "Server Room",
-    type: "SCP-RP",
-    status: "AREA-7",
-    image: "https://i.imgur.com/tyL4jqL.jpeg",
+    status: "8 hours",
+    images: ["https://i.imgur.com/9odNmCm.png", "https://i.imgur.com/aBhlM9C.png", "https://i.imgur.com/GFl6gfe.png", "https://i.imgur.com/hgWF6xW.jpeg"],
   },
   {
     title: "SCP-682",
     type: "SCP-RP",
-    status: "AREA-7",
-    image: "https://i.imgur.com/k310OeR.jpeg",
+    status: "7 hours",
+    images: ["https://i.imgur.com/ZJX3u8b.png", "https://i.imgur.com/a65TCi0.png", "https://i.imgur.com/3PEd4Z2.jpeg"],
+  },
+  {
+    title: "LCZ",
+    type: "SCP-RP",
+    status: "Many hours",
+    images: ["https://i.imgur.com/eA3VdyN.jpeg", "https://i.imgur.com/eHRy23U.jpeg", "https://i.imgur.com/tiEiS05.jpeg"],
+  },
+  {
+    title: "Server Room",
+    type: "SCP-RP",
+    status: "14 hours",
+    images: ["https://i.imgur.com/mx7V1pp.jpeg", "https://i.imgur.com/Q8WJ5Rg.png", "https://i.imgur.com/QeN0H2F.jpeg"],
+  },
+  {
+    title: "SCP-079",
+    type: "SCP-RP",
+    status: "2 hours",
+    images: ["https://i.imgur.com/elDDLdQ.jpeg", "https://i.imgur.com/4xOdSTS.jpeg"],
   },
   {
     title: "SCP-457",
     type: "SCP-RP",
-    status: "AREA-7",
-    image: "https://i.imgur.com/wXaHCNz.jpeg",
+    status: "4 hours",
+    images: ["https://i.imgur.com/Hrjrswd.png", "https://i.imgur.com/0SWgowD.jpeg"],
+  },
+  {
+    title: "SCP-096",
+    type: "SCP-RP",
+    status: "2 hours",
+    images: ["https://i.imgur.com/ZM4a3gV.png", "https://i.imgur.com/y8fhplw.png"],
+  },
+  {
+    title: "Ravine Bridge",
+    type: "SCP-RP",
+    status: "15 hours",
+    images: ["https://i.imgur.com/xxKLZ3w.jpeg", "https://i.imgur.com/cqkLCgL.png", "https://i.imgur.com/0K7Wr7Z.jpeg"],
+  },
+  {
+    title: "Medbay",
+    type: "SCP-RP",
+    status: "20+ hours",
+    images: ["https://i.imgur.com/2nYfPOQ.jpeg", "https://i.imgur.com/YjBJcjV.jpeg"],
+  },
+  {
+    title: "Lobby",
+    type: "SCP-RP",
+    status: "35 hours",
+    images: ["https://i.imgur.com/DghwHiP.png", "https://i.imgur.com/L0eXH91.jpeg", "https://i.imgur.com/bHNCOHy.jpeg"],
+  },
+  {
+    title: "HCZ Tunnels",
+    type: "SCP-RP",
+    status: "90 hours",
+    images: ["https://i.imgur.com/5Z1PPbo.png", "https://i.imgur.com/vImszr4.png", "https://i.imgur.com/JUQMwbT.jpeg"],
+  },
+  {
+    title: "Command Room",
+    type: "SCP-RP",
+    status: "50 hours",
+    images: ["https://i.imgur.com/98rf0yX.jpeg", "https://i.imgur.com/p0QGnCg.jpeg", "https://i.imgur.com/suvqxIK.png", "https://i.imgur.com/7wm9j4L.jpeg"],
+  },
+  {
+    title: "D-Block v1.0",
+    type: "SCP-RP",
+    status: "50 hours",
+    images: ["https://i.imgur.com/VO0r2ba.png", "https://i.imgur.com/sTZxJhU.jpeg", "https://i.imgur.com/QL6POzj.png", "https://i.imgur.com/9mxCFYD.jpeg"],
+  },
+  {
+    title: "Mirror Storage",
+    type: "SCP-RP",
+    status: "25 hours",
+    images: ["https://i.imgur.com/RUQUsvn.jpeg", "https://i.imgur.com/2LhLJCR.jpeg"],
+  },
+  {
+    title: "Chaos Insurgency Base",
+    type: "SCP-RP",
+    status: "30 hours",
+    images: ["https://i.imgur.com/EcBGjgz.jpeg", "https://i.imgur.com/dcdFIOP.png", "https://i.imgur.com/DXdLxXF.jpeg", "https://i.imgur.com/VKHnD4I.png", "https://i.imgur.com/OXEOUvp.jpeg"],
+  },
+  {
+    title: "Server Farm",
+    type: "SCP-RP",
+    status: "40 hours",
+    images: ["https://i.imgur.com/3IkRbZn.jpeg", "https://i.imgur.com/8bafWKr.jpeg", "https://i.imgur.com/jcmrllk.jpeg", "https://i.imgur.com/R7RVutZ.jpeg", "https://i.imgur.com/GJuDiB0.jpeg"],
+  },
+  {
+    title: "Foundation Hall",
+    type: "SCP-RP",
+    status: "70 hours",
+    images: ["https://i.imgur.com/ajJgRNV.png", "https://i.imgur.com/A7Vu9nw.png", "https://i.imgur.com/hWMEnBU.jpeg", "https://i.imgur.com/j1gr8P0.jpeg", "https://i.imgur.com/FJozcGn.png", "https://i.imgur.com/6FQ7mUH.png"],
+  },
+  {
+    title: "Common Area",
+    type: "SCP-RP",
+    status: "N/A",
+    images: ["https://i.imgur.com/sWzvaKa.png", "https://i.imgur.com/vqdtsOM.jpeg", "https://i.imgur.com/QJZQ9ob.jpeg"],
   },
 ];
 
 const MARQUEE_ITEMS = [
-  "Visleafing",
-  "Lightmap Pass",
-  "Prop Optimization",
-  "Nav Flow",
-  "Callouts",
-  "Ambient FX",
-  "Skybox Design",
-  "Encounter Design",
-  "Entity Logic",
-  "Compile Pipeline",
+  "Hint/Skip",
+  "func_detail",
+  "Map Protection",
+  "Displacements",
+  "Map Logic",
 ];
 
 const particleContainer = document.getElementById("particles");
@@ -86,8 +163,9 @@ const renderMaps = () => {
   MAPS.forEach((map) => {
     const card = document.createElement("article");
     card.className = "map-card";
-    const thumbInner = map.image
-      ? `<img src="${map.image}" alt="${map.title}" loading="lazy" />`
+    const hasImages = map.images && map.images.length > 0;
+    const thumbInner = hasImages
+      ? `<img src="${map.images[map.images.length - 1]}" alt="${map.title}" loading="lazy" />`
       : `<span class="map-thumb-label">${map.title.split(" ")[0]}</span>`;
     card.innerHTML = `
       <div class="map-thumb">${thumbInner}</div>
@@ -99,9 +177,9 @@ const renderMaps = () => {
         </div>
       </div>
     `;
-    // Open lightbox on click if there's an image
-    if (map.image) {
-      card.addEventListener("click", () => openLightbox(map.image, map.title));
+    // Open lightbox on click if there are images
+    if (hasImages) {
+      card.addEventListener("click", () => openLightbox(map.images, map.title, 0));
     }
     mapGrid.appendChild(card);
   });
@@ -112,13 +190,40 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxCaption = document.getElementById("lightbox-caption");
 const lightboxClose = document.getElementById("lightbox-close");
+let currentImages = [];
+let currentIndex = 0;
+let currentTitle = "";
 
-const openLightbox = (src, caption) => {
-  lightboxImg.src = src;
-  lightboxImg.alt = caption;
-  lightboxCaption.textContent = caption;
+const openLightbox = (images, title, index = 0) => {
+  currentImages = [...images].reverse();
+  currentTitle = title;
+  currentIndex = index;
+  updateLightboxImage();
   lightbox.classList.add("active");
   document.body.style.overflow = "hidden";
+};
+
+const updateLightboxImage = () => {
+  lightboxImg.src = currentImages[currentIndex];
+  lightboxImg.alt = currentTitle;
+  const caption = currentImages.length > 1 
+    ? `${currentTitle} (${currentIndex + 1}/${currentImages.length})`
+    : currentTitle;
+  lightboxCaption.textContent = caption;
+};
+
+const nextImage = () => {
+  if (currentImages.length > 1) {
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    updateLightboxImage();
+  }
+};
+
+const prevImage = () => {
+  if (currentImages.length > 1) {
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+    updateLightboxImage();
+  }
 };
 
 const closeLightbox = () => {
@@ -131,6 +236,10 @@ lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
 });
 document.addEventListener("keydown", (e) => {
+  if (!lightbox.classList.contains("active")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowRight") nextImage();
+  if (e.key === "ArrowLeft") prevImage) => {
   if (e.key === "Escape") closeLightbox();
 });
 
