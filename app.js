@@ -3,13 +3,13 @@ const MAPS = [
     title: "Entrance Zone",
     type: "SCP-RP",
     status: "In Progress",
-    images: [""],
+    images: []
   },
   {
     title: "Terminal 6 Optimization",
     type: "HL-RP",
     status: "In Progress",
-    images: [""],
+    images: []
   },
   {
     title: "HCZ Entrance",

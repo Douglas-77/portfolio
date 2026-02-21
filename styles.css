@@ -128,8 +128,6 @@ a {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("https://i.imgur.com/9uBec0x.jpeg")
-    center/cover no-repeat;
   opacity: 0.35;
 }
 
