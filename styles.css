@@ -25,7 +25,8 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at 50% 0%, #163878 0%, #0b1a38 50%, #081226 100%);
+  background: url("https://i.imgur.com/9uBec0x.jpeg") no-repeat center center fixed;
+  background-size: cover;
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
