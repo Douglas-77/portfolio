@@ -279,9 +279,9 @@ a {
 
 .map-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -507,11 +507,41 @@ a {
 
 .lightbox-img {
   max-width: 90vw;
-  max-height: 80vh;
+  max-height: 65vh;
   object-fit: contain;
   border-radius: 12px;
   border: 1px solid rgba(100, 160, 255, 0.3);
   box-shadow: 0 0 60px rgba(77, 159, 255, 0.25);
+}
+
+.lightbox-thumbnails {
+  display: flex;
+  gap: 12px;
+  max-width: 90vw;
+  overflow-x: auto;
+  padding: 8px;
+}
+
+.lightbox-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(100, 160, 255, 0.3);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.lightbox-thumb:hover {
+  opacity: 1;
+  border-color: rgba(100, 160, 255, 0.6);
+}
+
+.lightbox-thumb.active {
+  opacity: 1;
+  border-color: var(--blue);
 }
 
 .lightbox-caption {
@@ -553,5 +583,16 @@ a {
 
   .map-grid {
     grid-template-columns: 1fr;
+  }
+
+  .lightbox-thumb {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+  .map-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

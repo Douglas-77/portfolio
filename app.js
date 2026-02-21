@@ -166,7 +166,7 @@ const renderMaps = () => {
     const hasImages = map.images && map.images.length > 0;
     const thumbInner = hasImages
       ? `<img src="${map.images[map.images.length - 1]}" alt="${map.title}" loading="lazy" />`
-      : `<span class="map-thumb-label">${map.title.split(" ")[0]}</span>`;
+      : `<span class="map-thumb-label">COMING SOON</span>`;
     card.innerHTML = `
       <div class="map-thumb">${thumbInner}</div>
       <div class="map-info">
@@ -190,6 +190,7 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxCaption = document.getElementById("lightbox-caption");
 const lightboxClose = document.getElementById("lightbox-close");
+const lightboxThumbnails = document.getElementById("lightbox-thumbnails");
 let currentImages = [];
 let currentIndex = 0;
 let currentTitle = "";
@@ -198,9 +199,35 @@ const openLightbox = (images, title, index = 0) => {
   currentImages = [...images].reverse();
   currentTitle = title;
   currentIndex = index;
+  renderThumbnails();
   updateLightboxImage();
   lightbox.classList.add("active");
   document.body.style.overflow = "hidden";
+};
+
+const renderThumbnails = () => {
+  lightboxThumbnails.innerHTML = "";
+  if (currentImages.length <= 1) return;
+  
+  currentImages.forEach((imgSrc, idx) => {
+    const thumb = document.createElement("img");
+    thumb.src = imgSrc;
+    thumb.className = "lightbox-thumb";
+    if (idx === currentIndex) thumb.classList.add("active");
+    thumb.addEventListener("click", () => {
+      currentIndex = idx;
+      updateLightboxImage();
+      updateThumbnailActive();
+    });
+    lightboxThumbnails.appendChild(thumb);
+  });
+};
+
+const updateThumbnailActive = () => {
+  const thumbs = lightboxThumbnails.querySelectorAll(".lightbox-thumb");
+  thumbs.forEach((thumb, idx) => {
+    thumb.classList.toggle("active", idx === currentIndex);
+  });
 };
 
 const updateLightboxImage = () => {
@@ -210,6 +237,7 @@ const updateLightboxImage = () => {
     ? `${currentTitle} (${currentIndex + 1}/${currentImages.length})`
     : currentTitle;
   lightboxCaption.textContent = caption;
+  updateThumbnailActive();
 };
 
 const nextImage = () => {
