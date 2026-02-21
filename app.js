@@ -2,40 +2,40 @@
 // Example: image: "images/maps/my-map.jpg"
 const MAPS = [
   {
-    title: "Aegis Foundry",
+    title: "HCZ Entrance",
     type: "SCP-RP",
-    status: "",
-    image: "",
+    status: "AREA-7",
+    image: "https://i.imgur.com/BFLKtec.jpeg",
   },
   {
-    title: "Riptide Complex",
+    title: "LCZ Loading Dock",
     type: "SCP-RP",
-    status: "",
-    image: "",
+    status: "AREA-7",
+    image: "https://i.imgur.com/BeMNf9F.jpeg",
   },
   {
-    title: "Vanguard Rift",
+    title: "Medbay",
     type: "SCP-RP",
-    status: "",
-    image: "",
+    status: "AREA-7",
+    image: "https://i.imgur.com/OoUsKyf.png",
   },
   {
-    title: "Polar Relay",
+    title: "Server Room",
     type: "SCP-RP",
-    status: "",
-    image: "",
+    status: "AREA-7",
+    image: "https://i.imgur.com/tyL4jqL.jpeg",
   },
   {
-    title: "Kestrel Docks",
+    title: "SCP-682",
     type: "SCP-RP",
-    status: "",
-    image: "",
+    status: "AREA-7",
+    image: "https://i.imgur.com/k310OeR.jpeg",
   },
   {
-    title: "Hexline Facility",
+    title: "SCP-457",
     type: "SCP-RP",
-    status: "",
-    image: "",
+    status: "AREA-7",
+    image: "https://i.imgur.com/wXaHCNz.jpeg",
   },
 ];
 
