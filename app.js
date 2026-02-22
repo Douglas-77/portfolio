@@ -42,12 +42,6 @@ const MAPS = [
     images: ["https://i.imgur.com/Hrjrswd.png", "https://i.imgur.com/0SWgowD.jpeg"],
   },
   {
-    title: "SCP-096",
-    type: "SCP-RP",
-    status: "2 hours",
-    images: ["https://i.imgur.com/ZM4a3gV.png", "https://i.imgur.com/y8fhplw.png"],
-  },
-  {
     title: "Ravine Bridge",
     type: "SCP-RP",
     status: "15 hours",
