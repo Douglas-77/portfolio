@@ -248,6 +248,16 @@ a {
   margin-top: 36px;
 }
 
+.stats-row-2 {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 24px;
+}
+
+.stats-row-3 {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+}
+
 .stats > div {
   display: flex;
   flex-direction: column;

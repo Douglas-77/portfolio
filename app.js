@@ -32,7 +32,7 @@ const MAPS = [
   {
     title: "LCZ",
     type: "SCP-RP",
-    status: "Many hours",
+    status: "10 hours",
     images: ["https://i.imgur.com/eA3VdyN.jpeg", "https://i.imgur.com/eHRy23U.jpeg", "https://i.imgur.com/tiEiS05.jpeg"],
   },
   {
@@ -60,7 +60,7 @@ const MAPS = [
     images: ["https://i.imgur.com/DghwHiP.png", "https://i.imgur.com/L0eXH91.jpeg", "https://i.imgur.com/bHNCOHy.jpeg"],
   },
   {
-    title: "HCZ Tunnels",
+    title: "HCZ Tunnel Templates",
     type: "SCP-RP",
     status: "90 hours",
     images: ["https://i.imgur.com/5Z1PPbo.png", "https://i.imgur.com/vImszr4.png", "https://i.imgur.com/JUQMwbT.jpeg"],
