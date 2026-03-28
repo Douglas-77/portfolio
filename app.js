@@ -1,5 +1,17 @@
 const MAPS = [
   {
+    title: "D-Block v2.0",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: []
+  },
+  {
+    title: "SCP-049",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: []
+  },
+  {
     title: "Entrance Zone",
     type: "SCP-RP",
     status: "In Progress",
