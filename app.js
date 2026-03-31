@@ -1,21 +1,15 @@
 const MAPS = [
   {
-    title: "D-Block v2.0",
-    type: "SCP-RP",
-    status: "In Progress",
-    images: ["https://i.imgur.com/4nHFxjl.png"]
-  },
-  {
-    title: "SCP-049",
-    type: "SCP-RP",
-    status: "In Progress",
-    images: ["https://i.imgur.com/hXpXqps.png"]
-  },
-  {
     title: "Entrance Zone",
     type: "SCP-RP",
     status: "In Progress",
     images: ["https://i.imgur.com/GvHW8EE.png", "https://i.imgur.com/jFSEOZr.png"]
+  },
+  {
+    title: "SCP-049",
+    type: "SCP-RP",
+    status: "4 hours",
+    images: ["https://i.imgur.com/hXpXqps.png", "https://i.imgur.com/hF2opJn.jpeg"]
   },
   {
     title: "HCZ Entrance",
