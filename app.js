@@ -1,5 +1,11 @@
 const MAPS = [
   {
+    title: "Ruins",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: ["https://i.imgur.com/jpVPZOR.png"],
+  },
+  {
     title: "Entrance Zone",
     type: "SCP-RP",
     status: "In Progress",
