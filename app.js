@@ -1,5 +1,11 @@
 const MAPS = [
   {
+    title: "LCZ v2.0",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: []
+  },
+  {
     title: "Ruins",
     type: "SCP-RP",
     status: "In Progress",
@@ -42,7 +48,7 @@ const MAPS = [
     images: ["https://i.imgur.com/mx7V1pp.jpeg", "https://i.imgur.com/Q8WJ5Rg.png", "https://i.imgur.com/QeN0H2F.jpeg"],
   },
   {
-    title: "LCZ",
+    title: "LCZ v1.0",
     type: "SCP-RP",
     status: "10 hours",
     images: ["https://i.imgur.com/eA3VdyN.jpeg", "https://i.imgur.com/eHRy23U.jpeg", "https://i.imgur.com/tiEiS05.jpeg"],
