@@ -6,16 +6,22 @@ const MAPS = [
     images: []
   },
   {
-    title: "Ruins",
+    title: "SCP-131",
     type: "SCP-RP",
-    status: "In Progress",
-    images: ["https://i.imgur.com/jpVPZOR.png"],
+    status: "1 hour",
+    images: ["https://i.imgur.com/18dvY4E.jpeg"]
   },
   {
     title: "Entrance Zone",
     type: "SCP-RP",
     status: "In Progress",
     images: ["https://i.imgur.com/GvHW8EE.png", "https://i.imgur.com/jFSEOZr.png"]
+  },
+  {
+    title: "Ruins",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: ["https://i.imgur.com/jpVPZOR.png"],
   },
   {
     title: "SCP-049",
