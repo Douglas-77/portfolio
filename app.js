@@ -1,9 +1,9 @@
 const MAPS = [
   {
-    title: "LCZ v2.0",
+    title: "LCZ v4.0",
     type: "SCP-RP",
     status: "In Progress",
-    images: []
+    images: ["https://i.imgur.com/Mv1X3S7.png"]
   },
   {
     title: "SCP-131",
