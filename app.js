@@ -3,7 +3,7 @@ const MAPS = [
     title: "LCZ v4.0",
     type: "SCP-RP",
     status: "In Progress",
-    images: ["https://i.imgur.com/Mv1X3S7.png"]
+    images: ["https://i.imgur.com/Mv1X3S7.png", "https://i.imgur.com/63EKStX.png"]
   },
   {
     title: "SCP-131",
