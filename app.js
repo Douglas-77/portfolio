@@ -1,5 +1,11 @@
 const MAPS = [
   {
+    title: "SCP-093",
+    type: "SCP-RP",
+    status: "In Progress",
+    images: ["https://i.imgur.com/mxnqeFy.png"],
+  }
+  {
     title: "LCZ v4.0",
     type: "SCP-RP",
     status: "In Progress",
